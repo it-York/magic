@@ -1,0 +1,7 @@
+digraph G {
+"camera_init" -> "body"[label=" Broadcaster: default_authority\nAverage rate: 10.202\nBuffer length: 4.999\nMost recent transform: 1784273016.37023\nOldest transform: 1784273011.371007\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1784273016.4781644"[ shape=plaintext ] ;
+}->"camera_init";
+}

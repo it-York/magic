@@ -1,0 +1,57 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: lio/ElevatorStatusPanel
+    Name: Elevator Status
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane: XY
+    - Class: rviz_default_plugins/PointCloud2
+      Name: LiDAR
+      Enabled: true
+      Topic:
+        Value: /LIO/clouds_lidar
+      Queue Size: 10
+      Size (Pixels): 2
+      Style: Points
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Global Map
+      Enabled: true
+      Topic:
+        Value: /LIO/global_map
+      Queue Size: 2
+      Size (Pixels): 1
+      Style: Points
+    - Class: rviz_default_plugins/Path
+      Name: Path
+      Enabled: true
+      Topic:
+        Value: /lio_node/path_topic_name
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+  Enabled: true
+  Global Options:
+    Background Color: 0; 0; 0
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 20
+      Name: Current View
+      Pitch: 0.8
+      Yaw: 0.8
+Window Geometry:
+  Height: 900
+  Width: 1440

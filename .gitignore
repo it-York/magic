@@ -1,0 +1,28 @@
+# ROS 2 / colcon generated files
+build/
+install/
+log/
+build_*/
+install_*/
+log_*/
+
+# Nested repository metadata and editor files
+.git/
+.agents/
+.codex/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Runtime data
+*.bag
+*.db3
+*.mcap
+core
+core.*
